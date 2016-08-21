@@ -12,9 +12,6 @@ namespace ecoPoints.Controllers
         [System.Web.Http.HttpPost]
         public String Post()
         {
-            //-------------------------------------------------------------------------------------
-            //----SWITCH QUE CONTROLA LA OPCION A EJECUTAR DEPENDIENDO DE LO QUE ELIJAMOS----------
-            //-------------------------------------------------------------------------------------
             var Request = HttpContext.Current.Request;
             switch (Request["op"])//op variable opcion
             {
