@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ecoPoints", "ecoPoints\ecoPoints.csproj", "{E87E4ABC-DF3F-4A64-8363-1ABE69D77B03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{AC26CCCA-3972-41F8-B12C-AED4CA6CBEB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{F682D72B-2AD1-4B79-9578-39DC22FE82A3}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{D2F289B8-1AC4-4324-81D2-51E10BF20283}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\ecoPoints.json = PublishScripts\Templates\ecoPoints.json
+		PublishScripts\Templates\ecoPoints.param.dev.json = PublishScripts\Templates\ecoPoints.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E87E4ABC-DF3F-4A64-8363-1ABE69D77B03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E87E4ABC-DF3F-4A64-8363-1ABE69D77B03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E87E4ABC-DF3F-4A64-8363-1ABE69D77B03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E87E4ABC-DF3F-4A64-8363-1ABE69D77B03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F682D72B-2AD1-4B79-9578-39DC22FE82A3} = {AC26CCCA-3972-41F8-B12C-AED4CA6CBEB6}
+		{D2F289B8-1AC4-4324-81D2-51E10BF20283} = {AC26CCCA-3972-41F8-B12C-AED4CA6CBEB6}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "ecoPoints"
+  },
+  "hostingPlanName": {
+    "value": "ServicePlan7994f144-9973"
+  },
+  "siteLocation": {
+    "value": "South Central US"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "2f56519f-a13f-4e16-bf4e-5f1c5c5cb290"
+  },
+  "resourceGroup": {
+    "value": "CDB"
+  }
+}

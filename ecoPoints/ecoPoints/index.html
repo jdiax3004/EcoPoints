@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js"></script>
+
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        function registro() {
+            $("#texto").html("registro en progreso");
+            var carne = $("#carne").val();
+            var pass = $("#pass").val();
+
+            var datos = new FormData();
+            datos.append("carne", carne);
+            datos.append("pass", pass);
+            datos.append("op", "Insertar");
+            $.ajax({
+                url: 'http://ecopoints.azurewebsites.net/Api/usuario',
+                processData: false,
+                contentType: false,
+                data: datos,
+                type: 'POST'
+            }).done(function (result) {
+                alert(result);
+                $("#texto").html(result);
+            }).fail(function (a, b, c) {
+                console.log(a, b, c);
+            });
+        }
+    </script>
+</head>
+<body>
+
+    <input type="text" id="carne">
+    <input type="text" id="pass">
+    <input type="button" onclick="registro()" id="boton">
+    
+    <div id="texto">En espera</div>
+        <script>
+        $("#boton").click(function(){
+            registro();
+        });
+    </script>
+        
+</body>
+</html>
